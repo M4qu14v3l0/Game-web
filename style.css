@@ -7,7 +7,9 @@
 body{
     padding: 0px , 10px , 0px , 10px;
     background-color: #f3e13f;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.49' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.49' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+    /* background-color: #eae861; */
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%233b3b38' fill-opacity='0.62' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 
@@ -132,11 +134,21 @@ body{
     .first_background{
         display: none;
     }
+    .box-1-right{
+        width: 220px;
+        height: 50px;
+    }
 }
 
-@media(max-width:500px){
 
+@media(max-width:520px){
+
+    .box-1-right h1{
+        display: none;
+    }
+    
     body{
+
         margin: 0%;
     }
 
@@ -159,6 +171,11 @@ body{
     .SSV{
         width: 450px;
         height: 400px;
+    }
+
+    .box-1-right{
+        width: 100px;
+        height: 40px;
     }
 }
 
@@ -192,26 +209,17 @@ body{
         width: 350px;
         height: 300px;
     }
+
     .box-1-right{
-        width: 220px;
-        height: 50px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        right: 16px;
-        gap: 15px;
-        color:aliceblue;
-        border-radius: 5px;
-        top: 10px;
-        cursor: pointer;
+        width: 47px;
     }
     
     .box-1-right i {
         position: absolute;
-        padding-top: 15px;
+        padding-top: 5px;
         font-size: 2rem;
-        right: 10px;
+        right: 9.5px;
+        
     }
     
     .box-1-right h1{
