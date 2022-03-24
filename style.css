@@ -1,0 +1,225 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 0px , 10px , 0px , 10px;
+    background-color: #f3e13f;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.49' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+
+.box-1 {
+    background-color:#ff0015;
+    display: flex;
+    width:100% ;
+    height:80px ;
+}
+
+.logo_nintendo{
+    padding-bottom: 50px;
+}
+
+.box-1-right{
+    width: 220px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    gap: 15px;
+    color:aliceblue;
+    border-radius: 5px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.box-1-right i {
+    padding-top: 7px;
+    font-size: 2rem;
+}
+
+.box-1-right h1{
+    padding-top: 10px;
+}
+
+
+.box-1-right:hover{
+    background-color: rgb(0,0, 0 , .5);
+    color: aliceblue;
+    transition: 0.7s;
+  }
+
+.first_background{
+    position: absolute;
+    margin-left: 8%;
+}
+
+
+.introduction{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+
+ } 
+
+.singboard{
+    width: 400px;
+    height: 160px;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    display: flex;
+}
+.singboard h1{
+    padding-top:110px ;
+    z-index: 100;
+    color: aliceblue;
+    text-shadow: 1px 3px 2px black;
+}
+
+.Letrero{
+    position:absolute;
+}
+
+.Mario{
+    position: relative; 
+    width: 650px;
+    right: 160px;
+    z-index: 100;
+}
+
+
+.Tunel{
+    top: 297px;
+    position: relative;
+    padding-left: 0px;
+    left: 190px;
+    z-index: 100;
+}
+
+.SSV{
+    position: relative;
+    margin-top: 125px;
+    width:55%;
+    height:550px;
+    object-fit:cover;
+    z-index: 50;
+    left: 160px;
+    border-radius: 15px;
+}
+
+
+@media(max-width:1337px){
+    .Mario{
+        display: none;
+    }
+    .Tunel{
+        display: none;
+    }
+    .SSV{
+        left: 0px;
+        margin-top: 90px;
+    }
+}
+@media(max-width:700px) {
+    .first_background{
+        display: none;
+    }
+}
+
+@media(max-width:500px){
+
+    body{
+        margin: 0%;
+    }
+
+    .box-1 {
+        width:100% ;
+        height:80px ;
+
+    }
+
+    .Letrero{
+        width: 400px;
+        height: 180px;
+    }
+    .singboard h1{
+        padding-top: 60px;
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    .SSV{
+        width: 450px;
+        height: 400px;
+    }
+}
+
+
+@media(max-width:455px){
+
+
+
+
+    .Letrero{
+        width: 350px;
+        height: 180px;
+    }
+
+    .singboard{
+        width: 300px;
+        height: 160px;
+        justify-content: center;
+        text-align: center;
+        margin:auto;
+        display: flex;
+    }
+
+    .singboard h1{
+        padding-top: 70px;
+        width: 300px;
+        font-size: 1.3em;
+    }
+
+    .SSV{
+        width: 350px;
+        height: 300px;
+    }
+    .box-1-right{
+        width: 220px;
+        height: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        right: 16px;
+        gap: 15px;
+        color:aliceblue;
+        border-radius: 5px;
+        top: 10px;
+        cursor: pointer;
+    }
+    
+    .box-1-right i {
+        position: absolute;
+        padding-top: 15px;
+        font-size: 2rem;
+        right: 10px;
+    }
+    
+    .box-1-right h1{
+        display: none;
+    }
+}
+
+
+
+
+
